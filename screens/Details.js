@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Home = () => {
+const Details = () => {
   return (
     <View>
-      <Text>Im the Vaavu and this is my Mottas home Yay!</Text>
+      <Text>Im the details page</Text>
     </View>
   )
 }
 
-export default Home
+export default Details
