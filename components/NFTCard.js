@@ -20,7 +20,7 @@ const NFTCard = ({ data }) => {
       ...SHADOWS.dark
     }}>
     <View style={{ width:'100%', height: 250 }}>
-    <TouchableOpacity onPress={() => navigation.navigate("Details", { data })}><Image 
+      <Image 
           source = {data.image}
           resizeMode = "cover"
           style = {{
@@ -29,17 +29,18 @@ const NFTCard = ({ data }) => {
             borderTopLeftRadius: SIZES.font,
             borderTopRightRadius: SIZES.font
           }}
-        /></TouchableOpacity>
+        />
         <CircleButton theimageUrl={assets.heart} right={10} top={10} />
       </View>
 
       <SubInfo />
       <View style={{ width:'100%', padding:SIZES.font }}>
-          <TouchableOpacity onPress={() => navigation.navigate("Details", { data })}>
+          <TouchableOpacity onPress={() => navigation.navigate("Details", { data })}
+          style={{margin:0, padding:0}}>
           <NFTTitle 
             title={data.name}
             subTitle={data.creator}
-            titleSize={SIZES.large + 2}
+            titleSize={SIZES.large + 1.25}
             subTitleSize={SIZES.small}            
           /></TouchableOpacity>
           <View style={{

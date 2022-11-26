@@ -15,8 +15,8 @@ const HomeHeader = ({ onSearch }) => {
         alignItems: 'center'
       }}>
           <Image source={assets.logo}
-                 resizeMode='contain'
-                 style={{ width:90, height:25 }}
+                 resizeMode='cover'
+                 style={{ width:120, height:25 }}
           />
           <View style={{ width:45, height:45 }}>
               <Image source={assets.person02}
@@ -42,7 +42,6 @@ const HomeHeader = ({ onSearch }) => {
       <View style={{ marginTop: SIZES.font }}>
         <View style={{
           width:'100%',
-          // borderRadius: SIZES.font,
           backgroundColor:COLORS.gray,
           flexDirection:'row',
           alignItems:'center',
