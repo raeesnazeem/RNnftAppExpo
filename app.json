@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "RNnftAppExpo",
+    "name": "Marvellido",
     "slug": "RNnftAppExpo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,7 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.raeesnazeem.RNnftAppExpo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fc7fe131-a6c1-4500-bcbf-14b560b10082"
+      }
     }
   }
 }
